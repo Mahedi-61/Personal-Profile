@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="au.org.ipdc.personalprofile" >
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="au.org.ipdc.model.AlarmReceiver" android:process=":remote"/>
+        <receiver android:enabled="false" android:name="au.org.ipdc.model.SampleBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="au.org.ipdc.personalprofile.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="au.org.ipdc.personalprofile.CreateAccount"/>
+        <activity android:name="au.org.ipdc.personalprofile.MonthlyProfile"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".DailyProfile"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".MonthlyProfileReport"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="au.org.ipdc.personalprofile.MonthlyProfilePlan"
+                  android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="au.org.ipdc.personalprofile.Settings"/>
+        <activity android:name="au.org.ipdc.personalprofile.About"/>
+    </application>
+
+</manifest>
