@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/tvDateMP"
+            android:layout_width="50.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- study 4 -->
+        <TextView
+            android:id="@+id/tvQuranReciteMP"
+            android:layout_width="60.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+
+        <TextView
+            android:id="@+id/tvQuranStudyMP"
+            android:layout_width="50.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvHadithStudyMP"
+            android:layout_width="50.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvIslamiLiteratureStudyMP"
+            android:layout_width="50.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+
+        <!-- namaz 1 -->
+        <TextView
+            android:id="@+id/tvNamajJamaatMP"
+            android:layout_width="50.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <!-- contact 6 -->
+        <TextView
+            android:id="@+id/tvFriendDawahMP"
+            android:layout_width="60.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvTargetedWorkerContactMP"
+            android:layout_width="60.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvWorkerContactMP"
+            android:layout_width="60.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvBookDistributionMP"
+            android:layout_width="50.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvTimeDedicationMP"
+            android:layout_width="50.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:paddingLeft="10.0dip"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/tvGeneralContactMP"
+            android:layout_width="60.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="4.0dip"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="60.0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbFamilyMeetingMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalFamilyMeetingMP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="4.0dip"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+
+        <LinearLayout
+            android:layout_width="90.0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/cbSelfCriticismMP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tvTotalSelfCriticismMP"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="4.0dip"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="13.0sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

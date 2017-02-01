@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/li_tvDateANW"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/li_tvProgDescriptionANW"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+
+        <TextView
+            android:id="@+id/li_tvTimeANW"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/li_tvUnitANW"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".15"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/li_tvCommentANW"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="13.0sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+    </LinearLayout>
+</LinearLayout>

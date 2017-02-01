@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip">
+
+            <RelativeLayout
+                android:layout_width="45.0dip"
+                android:layout_height="35.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip">
+
+                <ImageButton
+                    android:id="@+id/ibPreviousMP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/b_arrow_left" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40.0dip"
+                android:layout_centerInParent="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTitleMP"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5.0dip"
+                        android:gravity="center"
+                        android:text="This is a Heading"
+                        android:textColor="#FFF"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="45.0dip"
+                android:layout_height="35.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10.0dip">
+
+                <ImageButton
+                    android:id="@+id/ibNextMP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/b_arrow_right" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <au.org.ipdc.model.TextViewWithBanglaFont
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="center"
+        android:text="@string/intro_quran_ayat"
+        android:textColor="#ffffffff"
+        android:textSize="11.0sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="3dp">
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="50.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="তারিখ"
+                    android:textColor="#ffffffff"
+                    android:textSize="12.0sp" />
+
+                <!-- study 4 -->
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="কোরআন তিলাওয়াত (রুকু)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="কুরআন অধ্যয়ন (আয়াত)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="হাদীস অধ্যয়ন (সংখ্যা)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="ইসলামী  সাহিত্য  অধ্যয়ন"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <!-- namaz 1 -->
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="50.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="জামায়াত নামাজ (ওয়াক্ত)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <!-- contact 6 -->
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="দাওয়াতি বন্ধু সাক্ষাত     (সংখ্যা)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="কর্মী টার্গেট সাক্ষাত   (সংখ্যা)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="কর্মী  যোগাযোগ (সংখ্যা)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="50.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="বই বিলি  (সংখ্যা)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="50.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="সময় দান  (ঘন্টা)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="60.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="সাধারণ  যোগাযোগ (সংখ্যা)"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="60.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="পারিবারিক বৈঠক"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+
+                <au.org.ipdc.model.TextViewWithBanglaFont
+                    android:layout_width="90.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5.0dip"
+                    android:gravity="center"
+                    android:text="আত্নসমালোচনা"
+                    android:textColor="#ffffffff"
+                    android:textSize="11.0sp" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvMonthlyProfileMP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:divider="#000"
+                android:dividerHeight="1.0dip"
+                android:listSelector="#00000000" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#ff000000" />
+
+            <ListView
+                android:id="@+id/lvMonthlyProfileSummationMP"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:divider="#000"
+                android:dividerHeight="1.0dip"
+                android:listSelector="#00000000" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

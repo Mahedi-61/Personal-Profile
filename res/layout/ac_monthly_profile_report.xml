@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/myWindowBackground"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_margin="8.0dp"
+                android:background="?attr/colorPrimary">
+
+                <ImageButton
+                    android:id="@+id/ibPreviousMPR"
+                    android:layout_width="40.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/b_arrow_left" />
+
+                <TextView
+                    android:id="@+id/tvMonthOfDairyMPR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="5.0dip"
+                    android:text="Kicu Ekta hobe"
+                    android:textColor="#ffffffff"
+                    android:textSize="18.0sp" />
+
+                <ImageButton
+                    android:id="@+id/ibNextMPR"
+                    android:layout_width="40.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@drawable/b_arrow_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5.0dp"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="8.0dp"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvProfileKeepingDaysMPR"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".62"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:text="Total Profile Keeping Days: "
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".15"
+                    android:gravity="right"
+                    android:paddingRight="5dp"
+                    android:text="Plan "
+                    android:textColor="#FFF"
+                    android:textSize="15sp" />
+
+                <CheckBox
+                    android:id="@+id/cbPlanExistMPR"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".13"
+                    android:enabled="false" />
+            </LinearLayout>
+
+            <!-- first part - 8-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8.0dp"
+                android:background="@drawable/block_style_color1"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="মাস শেষে পূরণ করতে হবে"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.2"
+                        android:text="পরিচিতি বিলি সংখ্যা"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etIntroductoryDistributionMPR"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.2"
+                        android:text="পঠিত বই সংখ্যা"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etReadingBooksMPR"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.2"
+                        android:text="কতজন অ্যাসোসিয়েট মেম্বার/মেম্বার হয়েছে"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etMemberIncreaseMPR"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="5dp">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.2"
+                        android:text="এয়ানত দেয়ার তারিখ"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvEyanotPaymentDateMPR"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ff000000" />
+
+                        <View
+                            android:layout_width="fill_parent"
+                            android:layout_height="1.0dip"
+                            android:layout_marginTop="5dp"
+                            android:background="#000" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:singleLine="true"
+                        android:text="বায়তুলমালের আয় বৃদ্ধি ও চেষ্টা হয়েছে কিনা"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <RadioGroup
+                        android:id="@+id/rbSelectorMPR"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1.0"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbBaitulmalIncreasYesMPR"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/rad_selector"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingBottom="4.0dip"
+                            android:paddingTop="4.0dip"
+                            android:text="হ্যাঁ"
+                            android:textColor="#000" />
+
+                        <RadioButton
+                            android:id="@+id/rbBaitulmalIncreasNoMPR"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/rad_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:paddingBottom="4.0dip"
+                            android:paddingTop="4.0dip"
+                            android:text="না"
+                            android:textColor="#000" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.2"
+                        android:text="সামাজিক কাজের ধরণ"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etSocialWorkMPR"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.8"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.2"
+                        android:text="কতজন রোগীর সেবা করেছেন"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etPatientCareMPR"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.2"
+                        android:text="সাধারণ দাওয়াত দেয়া হয়েছে কতজনকে"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etGeneralDawahMPR"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+                </TableRow>
+            </LinearLayout>
+
+            <!-- second part-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/block_style_color2"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="মাসিক ব্যক্তিগত সাংগঠনিক কার্যক্রম"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:orientation="horizontal">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="তারিখ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".25"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="প্রোগ্রামের বিবরণ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="সময়"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".15"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="ইউনিট"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".2"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="মন্তব্য"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <au.org.ipdc.model.NestedListView
+                    android:id="@+id/lvAddedNewWorkMPR"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#000"
+                    android:dividerHeight="1.0dip"
+                    android:listSelector="#00000000" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff000000" />
+
+                <Button
+                    android:id="@+id/bAddNewWorkMPR"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rect_button_selector"
+                    android:gravity="center"
+                    android:text="Add New"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <!-- last part-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/block_style_color1"
+                android:orientation="vertical"
+                android:padding="5.0sp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="দায়িত্বশীলের মন্তব্য ও পরামর্শ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_marginTop="10.0dip">
+
+                    <EditText
+                        android:id="@+id/etSuggestionMPR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:inputType="textMultiLine"
+                        android:maxLines="20"
+                        android:textColor="#ff000000" />
+
+                </TableRow>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bSaveMPR"
+                android:layout_width="300dp"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_drawable_button"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

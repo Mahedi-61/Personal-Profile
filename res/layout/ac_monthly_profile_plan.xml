@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/myWindowBackground"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_margin="8.0dp"
+                android:background="?attr/colorPrimary">
+
+                <ImageButton
+                    android:id="@+id/ibPreviousMPP"
+                    android:layout_width="40.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5.0dip"
+                    android:background="@drawable/b_arrow_left" />
+
+                <TextView
+                    android:id="@+id/tvMonthOfPlanMPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5.0dip"
+                    android:text="Kicu Ekta hobe"
+                    android:textColor="#FFF"
+                    android:textSize="18.0sp" />
+
+
+                <ImageButton
+                    android:id="@+id/ibNextMPP"
+                    android:layout_width="40.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5.0dip"
+                    android:background="@drawable/b_arrow_right" />
+            </RelativeLayout>
+
+            <!-- study - 9 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/block_style_color1"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="কোরআন তিলাওয়াত"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etQuranReciteMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="রুকু"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="কুরআন অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etQuranStudyMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="আয়াত"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="হাদীস অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etHadithStudyMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="ইসলামী সাহিত্য অধ্যয়ন"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etIslamiLiteratureStudyMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="পৃষ্ঠা"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="দারসে কোরআন নোট প্রস্তুত "
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etDarsulQuranNoteMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="দারসে হাদীস নোট প্রস্তুত "
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etDarsulHadithNoteMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="বইয়ের বিষয় ভিত্তিক নোট প্রস্তুত"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etTopicBasedBookNoteMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="আয়াত মুখস্ত"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etMemorizeAyatMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="হাদীস মুখস্ত"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etMemorizeHadithMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+            <!-- namaj 1 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="8.0dp"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/block_style_color2"
+                android:orientation="vertical"
+                android:padding="5.0sp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="নামায"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="মোট জামায়াতে নামাজ "
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etTotalJamaatMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="ওয়াক্ত"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+            <!-- contact 4-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/block_style_color1"
+                android:orientation="vertical"
+                android:padding="5.0sp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="যোগাযোগ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="কর্মী যোগাযোগ"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etWorkerContactMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="বই বিলি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etBookDistributionMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="সময় দান"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etTimeDedicationMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="ঘন্টা"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="সাধারণ যোগাযোগ"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etGeneralContactMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="টি"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+            <!-- miscellaneous - 2-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dp"
+                android:layout_marginRight="8.0dp"
+                android:layout_marginTop="5.0dp"
+                android:background="@drawable/block_style_color2"
+                android:orientation="vertical"
+                android:padding="5.0sp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffd0e4ea"
+                        android:gravity="center"
+                        android:text="বিবিধ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="পারিবারিক বৈঠক"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etFamilyMeetingMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="দিন"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="আত্নসমালোচনা"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+
+                    <EditText
+                        android:id="@+id/etSelfCriticismMPP"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:maxLines="1"
+                        android:textColor="#ff000000" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingLeft="10dp"
+                        android:text="দিন"
+                        android:textColor="#ff000000"
+                        android:textSize="12.0sp" />
+                </TableRow>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/block_style_color2"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:orientation="horizontal">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="দাওয়াতী বন্ধুর (নাম)"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="অন্তভূক্তির তারিখ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="সাক্ষাতের তারিখ "
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <au.org.ipdc.model.NestedListView
+                    android:id="@+id/lvAddedDawahFriedMPP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#000"
+                    android:dividerHeight="1.0dip"
+                    android:listSelector="#00000000"
+                    android:orientation="vertical" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff000000" />
+
+
+                <Button
+                    android:id="@+id/bAddNewDawahFriendMPP"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rect_button_selector"
+                    android:gravity="center"
+                    android:text="Add New"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8.0dip"
+                android:layout_marginRight="8.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/block_style_color2"
+                android:orientation="vertical"
+                android:padding="5.0dip">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dp"
+                    android:orientation="horizontal">
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="কর্মী টার্গেট (নাম )"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="টার্গেট তারিখ"
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+
+                    <au.org.ipdc.model.TextViewWithBanglaFont
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:background="@drawable/radio_item_bg_normal"
+                        android:gravity="center"
+                        android:text="সাক্ষাতের তারিখ "
+                        android:textColor="#ff000000"
+                        android:textSize="13.0sp" />
+                </TableRow>
+
+                <au.org.ipdc.model.NestedListView
+                    android:id="@+id/lvAddedWorkerFriedMPP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#000"
+                    android:dividerHeight="1.0dip"
+                    android:listSelector="#00000000" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="#ff000000" />
+
+                <Button
+                    android:id="@+id/bAddNewWorkerFriendMPP"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rect_button_selector"
+                    android:gravity="center"
+                    android:text="Add New"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bSaveMPP"
+                android:layout_width="300dp"
+                android:layout_height="40.0dip"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_drawable_button"
+                android:gravity="center"
+                android:text="Save"
+                android:textColor="#ffffffff"
+                android:textSize="18.0sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
